@@ -9,9 +9,9 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
-	<link href="{% static "css/main2.css" %}" rel="stylesheet">
-	 <link href="{% static "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+	<link href="{% static 'css/main2.css' %}" rel="stylesheet">
+	 <link href="{% static 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' %}" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet">
 
@@ -48,11 +48,11 @@
 	<!------------------------------------------------navbar close------------------------------------------------------------------->
 	
 	<!----------------------------------------------mock-up start----------------------------------------------------------->
-	 <img class="mock1" src={% static "images/mock1.png" %}>
-	 <img class="pic1" src={% static "images/cover2.jpg" %}>
+	 <img class="mock1" src="{% static 'images/mock1.png' %}">
+	 <img class="pic1" src="{% static 'images/cover2.jpg' %}">
 	  
-	<img class="mock2" src={% static "images/mock2.png" %}>
-	<img class="pic2" src={% static "images/cover.jpg" %}>
+	<img class="mock2" src="{% static 'images/mock2.png' %}">
+	<img class="pic2" src="{% static 'images/cover.jpg' %}">
 	
 	
 	
@@ -71,12 +71,12 @@
 
 	    <div class="form-group">
         <label for="username">Username</label>
-        <input type="name" class="form-control" id="username" value="{{ username }}" placeholder="Username" name="username"  >
+        <input type="text" class="form-control" id="username" value="{{ username }}" placeholder="Username" name="username"  >
 
     </div>
 	    <div class="form-group">
         <label for="name">fullname</label>
-        <input type="name" class="form-control" id="name" value="{{ name }}" placeholder="Full Name" name="name" >
+        <input type="text" class="form-control" id="name" value="{{ name }}" placeholder="Full Name" name="name" >
 
     </div>
 	
@@ -99,9 +99,9 @@
 	<!-------------------------------------------------login form close------------------------------------------------------------>
 	
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="{% static "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="{% static "js/bootstrap.min.js" %}"></script>
-	  <script src="{% static "js/main2.js" %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+	  <script src="{% static 'js/main2.js' %}"></script>
   </body>
 </html>
