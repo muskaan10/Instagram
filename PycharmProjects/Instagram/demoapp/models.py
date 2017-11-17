@@ -4,17 +4,22 @@ from __future__ import unicode_literals
 from django.db import models
 import uuid
 
+
 # Create your models here.
 
 # a user model with following fields
 # it will store the user details
 class UserModel(models.Model):
-    email = models.EmailField(max_length=254, blank=False, unique=True)
-    name = models.CharField(max_length=120)
-    username = models.CharField(max_length=120, unique=True)
-    password = models.CharField(max_length=40)
-    created_on = models.DateTimeField(auto_now_add = True)
-    updated_on = models.DateTimeField(auto_now = True)
+    email = models.EmailField(max_length=254 )
+    name = models.CharField(max_length=120 )
+    username = models.CharField(max_length=120 )
+    password = models.CharField(max_length=400)
+    created_on = models.DateTimeField(auto_now_add=True)
+    updated_on = models.DateTimeField(auto_now=True)
+
+    #def __str__(self):
+       #return self.name + '( ' + self.email + ' )'
+
 
 # A session model
 # it will store the session details with user field
@@ -25,9 +30,10 @@ class SessionToken(models.Model):
     session_token = models.CharField(max_length=255)
     created_on = models.DateTimeField(auto_now_add=True)
     is_valid = models.BooleanField(default=True)
-    
+
     def create_token(self):
         self.session_token = uuid.uuid4()
+
 
 # This is used to store post in database
 # user is above defined usermodel
@@ -50,7 +56,7 @@ class PostModel(models.Model):
     @property
     def like_count(self):
         return len(LikeModel.objects.filter(post=self))
-    
+
     @property
     def comments(self):
         return CommentModel.objects.filter(post=self).order_by('created_on')
@@ -64,6 +70,7 @@ class LikeModel(models.Model):
     post = models.ForeignKey(PostModel)
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
+
 
 # just as like model it needs to be associated with the post and user
 # but like is just a count and comment has text associated with it
@@ -82,10 +89,11 @@ class CommentModel(models.Model):
     def upvote(self):
         return len(LikeComm.objects.filter(comment=self))
 
+
 # it the like model for the comments to store upvotes associated with the comments
 # it is just a count so only needs to be associated with the user and post
 # and no attribute of own
 
 class LikeComm(models.Model):
-	user = models.ForeignKey(UserModel)
-	comment = models.ForeignKey(CommentModel)
+    user = models.ForeignKey(UserModel)
+    comment = models.ForeignKey(CommentModel)

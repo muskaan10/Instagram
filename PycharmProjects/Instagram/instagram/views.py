@@ -31,15 +31,17 @@ def signup_view(request):
         #display signup form
 
         form = SignUpForm()
+
     elif request.method == 'POST':
         form = SignUpForm(request.POST)
+
         if form.is_valid():
             username = form.cleaned_data['username']
             email = form.cleaned_data['email']
             name = form.cleaned_data['name']
             password = form.cleaned_data['password']
             # insert data to db
-
+            
             new_user = UserModel(name=name, password=make_password(password), email=email, username=username)
             new_user.save()
             subject = 'Welcome to Upload To Win'
