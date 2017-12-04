@@ -41,11 +41,11 @@ def signup_view(request):
             name = form.cleaned_data['name']
             password = form.cleaned_data['password']
             # insert data to db
-            
+
             new_user = UserModel(name=name, password=make_password(password), email=email, username=username)
             new_user.save()
-            subject = 'Welcome to Upload To Win'
-            message = 'Thanks for joining "Upload ToWIn" where you can view , comment and like photos of your intrest'
+            subject = 'Welcome to Quickgram'
+            message = 'Thanks for joining "quickgram" where you can view,message,comment and like photos of your friends.'
             from_email = EMAIL_HOST_USER
             to_email = [new_user.email]
             send_mail(subject, message, from_email, to_email)
@@ -107,7 +107,7 @@ def feed_view(request):
             existing_like = LikeModel.objects.filter(post_id=post.id, user=user).first()
             if existing_like:
                 post.has_liked = True
-        return render(request,'feed.html', { 'posts' : posts})
+        return render(request,'index3.html', { 'posts' : posts})
     else:
         return redirect('/login/')
 
@@ -272,5 +272,5 @@ def search(request):
   	if "q" in request.GET:
   		q = request.GET["q"]
   		posts = PostModel.objects.filter(user__username__icontains=q)
-  		return render(request, "feed.html", {"posts": posts, "query": q})
-  	return render(request, "feed.html")
+  		return render(request, "index3.html", {"posts": posts, "query": q})
+  	return render(request, "index3.html")

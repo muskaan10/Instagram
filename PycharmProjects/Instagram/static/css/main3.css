@@ -1,0 +1,351 @@
+
+
+	/*  header {
+	  background-color: white;
+	  height: 30px;
+	}*/
+	
+	#wrapper {
+		  margin-top: 16px;
+		  margin-bottom: 16px;
+		}
+		
+	footer {
+	  background-color: rgb( 233, 235, 238 );
+		height: 30px;
+	}
+		
+
+		#main,
+		#menu,
+		#sidebar {
+		  height:600px;
+		}
+
+		#main { background-color:  rgb( 250, 250, 250 ); }
+
+		#menu { background-color: rgb( 250, 250, 250 ); }
+
+		#sidebar { background-color:  rgb( 250, 250, 250 ) !important; }
+		#header {
+			background-color: white;
+			color: white;
+			height: 75px;
+				}
+				
+	
+				
+		.search-box{
+			position:relative;
+			top: 14px;
+			left: 520px;
+            
+			height:28px;
+			width: 220px;
+		}
+		
+		#search-button{
+			position:relative;
+			top: 14px;
+			left: 520px;
+			margin-left:-45px;
+			height:25px;
+			border-color: white;
+		}
+		
+		
+		#header ul .glyphicon {
+    font-size: 20px;
+		}
+		.icon{
+			color: black !important;
+		}
+		#img1{
+			position: absolute;
+			left: 30px;
+			top: -4px;
+			margin-left: 100px;
+			height:50px;
+			margin-right: 3px;
+			margin-top: 14px;
+			border:  3px solid black;
+			border-radius: 14px;
+			
+		}
+		#img2{
+			height:35x;
+			width:35px;
+			margin-top: 10px;
+			margin-right: auto;
+		}
+		
+		#form{
+			padding:0px;
+			
+		}
+		.toy{
+			background-color: white;
+			
+			
+		}
+	
+		
+		#brand{
+			padding:0px;
+			
+		}
+		
+		.pull-right {
+		float: right!important;
+		
+	}	
+
+		.list-heading {
+			padding: 20px 15px 0 15px;
+		}	
+		
+		.logo{
+			margin-right: 8px;
+		}
+		.photo{
+			width: 25px;
+			height: 25px;
+			border-radius: 4px;
+			margin-right: 8px;
+		}
+		
+		.badge{
+			float: right;
+			position: relative;
+			top: 3px;
+		}
+		
+		.frame{
+			float: right;
+			margin-bottom: 4px;
+		}
+		.margin{
+			margin-left:-5px;
+			font-size:13px;
+		}
+		
+		.picture{
+			color: black;
+		
+		}
+		
+		.panel-body .glyphicon {
+			margin-left: 10px;
+			margin-right: 4px;
+		}
+		
+		.text-post {
+			margin-bottom: 15px;
+			margin-top: 0;
+		}
+		
+		
+		.image-post {
+				margin-bottom: 15px;
+			}
+			
+			#main {
+				overflow: auto;
+				
+				
+			}
+			
+			
+			#main::-webkit-scrollbar {
+					display: none;
+				}
+				.comment {
+					margin: 0;
+				}
+			#img3{
+				height: 30px;
+				width: 30px;
+			}
+
+			.symbol{
+				height: 25px;
+				width: 25px;
+				border-radius: 18px;
+			}
+			
+			
+			.visual{
+				height:30px;
+				width:30px;
+				
+			}
+			
+			#menu{
+				overflow:auto;
+				
+			}
+			#menu::-webkit-scrollbar {
+					display: none;
+				}
+			.ice{
+				margin: 2px;
+							}
+			
+			.bridge{
+				color: rgb(69, 101, 161);
+			}
+			
+			.bird{
+				color:rgb(199, 200, 202);
+			}
+			
+			.rain{
+				height: 32px;
+				width: 32px;
+			}
+			.poll{
+				position: relative;
+				left: -4px;
+				top:-2px;
+			}
+			
+			.tool{
+				color: rgb(175, 177, 183);
+				position: relative;
+				top: -9px;
+				left: 10px;
+			}
+			
+			.key{
+				position: relative;
+				left: 47px;
+				top: -21px;
+			}
+			
+			.pen{
+				position: relative;
+				left: 4px;
+				}
+				
+				.ten{
+				position: relative;
+				left: 6px;
+				}
+			#img4{
+				height: 25px;
+				width: 25px;
+			}
+			.jay{
+				height: 40px;
+				width: 40px;
+				border-radius: 20px;
+			}
+			#doll{
+				background-color: rgb( 250, 250, 250 );
+			}
+			#sidebar{
+				overflow: auto;
+			}
+			#sidebar::-webkit-scrollbar {
+					display: none;
+				}
+							
+			.under-text{
+				color: grey;
+			}
+			.panel-heading
+			{
+				color: blue;
+			}
+
+
+
+			.plus
+			{
+				position: relative;
+				top: 100px;
+			padding-left:200px;	
+			margin-bottom:30px;
+			}
+           .zet{
+			   font-size: 13px;
+				color: rgb( 175, 177, 183);
+			}
+			.pin{
+				position: relative;
+				right: -8px;
+			}
+			.tin{
+				position: relative;
+				right: -6px;
+			
+			}
+			
+			.kit{
+				position: relative;
+				right: -6px;
+				top: -7px;
+			}
+			.pit{
+				position: relative;
+				right: -30px;
+				top: -10px;
+			}
+			.try{
+				position: relative;
+				left: -35px;
+				margin-top: 15px;
+			}
+			
+			.color{
+				color: rgb( 152, 156, 163 );
+			}
+			
+				
+			.bat{
+				padding: 0.9px 3px;
+				border-radius: 3px;
+				position: absolute;
+				top: 3px;
+				right: 7px;
+				background-color: red;
+				color: white;
+			}
+			.icon{
+				position: relative;
+				left: 10px;
+				
+			}
+			.player-button{
+				display: flex;
+				font-size: 2rem;
+			}
+			.text{
+				position: relative;
+				font-size: 2.5rem;
+				right: 130px;
+				top: 10px;
+			}
+			.text1{
+				position: relative;
+				font-size: 2.5rem;
+				right: 230px;
+				top: 10px;
+			}
+			.name{
+			position:absolute;
+			left: 230px;
+			font-family: 'Yesteryear', cursive;
+			font-size:30px;
+			color: black;
+			cursor: pointer;
+		}
+		.vr {
+			width:1px;
+			height:50px;
+			background-color:#000;
+			position:absolute;
+			top:11px;
+			bottom:0;
+			left:200px;
+		}
